@@ -31,6 +31,9 @@ namespace CSharpGym
         {
             this.delegate_button = new System.Windows.Forms.Button();
             this.events = new System.Windows.Forms.Button();
+            this.is_as_button = new System.Windows.Forms.Button();
+            this.idispose_button = new System.Windows.Forms.Button();
+            this.check_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // delegate_button
@@ -53,11 +56,44 @@ namespace CSharpGym
             this.events.UseVisualStyleBackColor = true;
             this.events.Click += new System.EventHandler(this.events_Click);
             // 
+            // is_as_button
+            // 
+            this.is_as_button.Location = new System.Drawing.Point(141, 68);
+            this.is_as_button.Name = "is_as_button";
+            this.is_as_button.Size = new System.Drawing.Size(94, 29);
+            this.is_as_button.TabIndex = 2;
+            this.is_as_button.Text = "is_as";
+            this.is_as_button.UseVisualStyleBackColor = true;
+            this.is_as_button.Click += new System.EventHandler(this.is_as_button_Click);
+            // 
+            // idispose_button
+            // 
+            this.idispose_button.Location = new System.Drawing.Point(255, 68);
+            this.idispose_button.Name = "idispose_button";
+            this.idispose_button.Size = new System.Drawing.Size(94, 29);
+            this.idispose_button.TabIndex = 3;
+            this.idispose_button.Text = "iDispose";
+            this.idispose_button.UseVisualStyleBackColor = true;
+            this.idispose_button.Click += new System.EventHandler(this.idispose_button_Click);
+            // 
+            // check_button
+            // 
+            this.check_button.Location = new System.Drawing.Point(27, 68);
+            this.check_button.Name = "check_button";
+            this.check_button.Size = new System.Drawing.Size(94, 29);
+            this.check_button.TabIndex = 4;
+            this.check_button.Text = "check";
+            this.check_button.UseVisualStyleBackColor = true;
+            this.check_button.Click += new System.EventHandler(this.check_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.check_button);
+            this.Controls.Add(this.idispose_button);
+            this.Controls.Add(this.is_as_button);
             this.Controls.Add(this.events);
             this.Controls.Add(this.delegate_button);
             this.Name = "Form1";
@@ -70,5 +106,8 @@ namespace CSharpGym
 
         private System.Windows.Forms.Button delegate_button;
         private System.Windows.Forms.Button events;
+        private System.Windows.Forms.Button is_as_button;
+        private System.Windows.Forms.Button idispose_button;
+        private System.Windows.Forms.Button check_button;
     }
 }

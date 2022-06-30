@@ -30,5 +30,25 @@ namespace CSharpGym
             Operate operate = new Operate();
             operate.Init();
         }
+
+        private void check_button_Click(object sender, EventArgs e)
+        {
+            Meet6_check meet6_Check = new Meet6_check();
+            meet6_Check.Run();
+        }
+
+        private void is_as_button_Click(object sender, EventArgs e)
+        {
+            Meet6_is_as meet6_Is_As = new Meet6_is_as();
+            meet6_Is_As.Run();
+        }
+
+        private void idispose_button_Click(object sender, EventArgs e)
+        {
+            Meet6_idispose meet6_Idispose = new Meet6_idispose();
+            meet6_Idispose.Run();
+        }
+
+
     }
 }
