@@ -49,6 +49,10 @@ namespace CSharpGym
             meet6_Idispose.Run();
         }
 
-
+        private void GetType_button_Click(object sender, EventArgs e)
+        {
+            Meet7_type meet7_Type = new Meet7_type();
+            meet7_Type.Run1();
+        }
     }
 }
