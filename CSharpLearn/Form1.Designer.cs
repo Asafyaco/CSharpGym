@@ -35,6 +35,7 @@ namespace CSharpGym
             this.idispose_button = new System.Windows.Forms.Button();
             this.check_button = new System.Windows.Forms.Button();
             this.GetType_button = new System.Windows.Forms.Button();
+            this.Generics_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // delegate_button
@@ -97,11 +98,22 @@ namespace CSharpGym
             this.GetType_button.UseVisualStyleBackColor = true;
             this.GetType_button.Click += new System.EventHandler(this.GetType_button_Click);
             // 
+            // Generics_button
+            // 
+            this.Generics_button.Location = new System.Drawing.Point(494, 68);
+            this.Generics_button.Name = "Generics_button";
+            this.Generics_button.Size = new System.Drawing.Size(94, 29);
+            this.Generics_button.TabIndex = 6;
+            this.Generics_button.Text = "Generics";
+            this.Generics_button.UseVisualStyleBackColor = true;
+            this.Generics_button.Click += new System.EventHandler(this.Generics_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Generics_button);
             this.Controls.Add(this.GetType_button);
             this.Controls.Add(this.check_button);
             this.Controls.Add(this.idispose_button);
@@ -122,5 +134,6 @@ namespace CSharpGym
         private System.Windows.Forms.Button idispose_button;
         private System.Windows.Forms.Button check_button;
         private System.Windows.Forms.Button GetType_button;
+        private System.Windows.Forms.Button Generics_button;
     }
 }
