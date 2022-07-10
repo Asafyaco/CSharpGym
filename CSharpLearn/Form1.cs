@@ -60,5 +60,11 @@ namespace CSharpGym
             Meet8_Generics meet8_Generics = new Meet8_Generics();
             meet8_Generics.Run();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Meet9_JSON_Serialization meet9_JSON_Serialization = new Meet9_JSON_Serialization();
+            meet9_JSON_Serialization.RunDe();
+        }
     }
 }
